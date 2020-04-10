@@ -14,4 +14,34 @@ rock_planet_list=planet_list[:4]
 
 #Science will prevail!!!!!!!!!!
 del planet_list[-1]
-print(planet_list)
+# print(planet_list)
+
+
+#Challenge
+
+spacecraft = [
+   ("Cassini", "Saturn"),
+   ("Viking", "Mars"),
+   ("Pioneer 10", "Jupiter"),
+   ("Pioneer 11", "Saturn"),
+   ("Voyager", "Jupiter"),
+   ("Voyager", "Saturn"),
+   ("Voyager", "Uranus"),
+   ("Voyager", "Neptune"),
+   ("BepiColombo", "Mercury"),
+   ("Messenger", "Mercury"),
+   ("Venus Express", "Venus"),
+   ("Magellan", "Venus"),
+   ("Akatsuki", "Mars")
+
+]
+
+for planet in planet_list:
+    missions = []
+    for crafts in spacecraft:
+        if crafts[1]==planet:
+            missions.append(crafts[0])
+    if len(missions) == 0:
+        print(f'Looks like no recorded missions on {planet} yet lol we live here.')
+    else:
+        print(f"{planet}'s missions are: {missions}'")
