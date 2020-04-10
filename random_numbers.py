@@ -20,4 +20,5 @@ for number in numbers_1_to_10:
             the_numbers_match = True
     if the_numbers_match:
         print(f'{number} is in the random list')
-        
+    else:
+        print(f'the list does not contain {number}')
